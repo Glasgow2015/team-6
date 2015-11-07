@@ -567,9 +567,9 @@ if( ! function_exists('dw_fixel_fb_meta') ) {
     add_action('wp_head', 'dw_fixel_fb_meta');
 }
 
-add_action( 'init', 'create_post_type' );
-function create_post_type() {
-    $labels = array(
+add_action( 'init', 'create_member_type' );
+function create_member_type() {
+    $labels = [
         'name'               => _x( 'Members', 'post type general name', 'your-plugin-textdomain' ),
         'singular_name'      => _x( 'Member', 'post type singular name', 'your-plugin-textdomain' ),
         'menu_name'          => _x( 'Members', 'admin menu', 'your-plugin-textdomain' ),
@@ -584,9 +584,9 @@ function create_post_type() {
         'parent_item_colon'  => __( 'Parent Members:', 'your-plugin-textdomain' ),
         'not_found'          => __( 'No members found.', 'your-plugin-textdomain' ),
         'not_found_in_trash' => __( 'No members found in Trash.', 'your-plugin-textdomain' )
-    );
+    ];
 
-    $args = array(
+    $args = [
         'public' => true,
         'exclude_from_search' => true,
         'publicly_queryable' => true,
@@ -595,11 +595,11 @@ function create_post_type() {
         'menu_position' => 21,
         'labels' => $labels,
         'supports' => array( 'title' )
-    );
+    ];
 
     register_post_type( 'member', $args );
 
-    $labels = array(
+    $labels = [
         'name'               => _x( 'Supporters', 'post type general name', 'your-plugin-textdomain' ),
         'singular_name'      => _x( 'Supporter', 'post type singular name', 'your-plugin-textdomain' ),
         'menu_name'          => _x( 'Supporters', 'admin menu', 'your-plugin-textdomain' ),
@@ -614,9 +614,9 @@ function create_post_type() {
         'parent_item_colon'  => __( 'Parent Supporters:', 'your-plugin-textdomain' ),
         'not_found'          => __( 'No supporters found.', 'your-plugin-textdomain' ),
         'not_found_in_trash' => __( 'No supporters found in Trash.', 'your-plugin-textdomain' )
-    );
+    ];
 
-    $args = array(
+    $args = [
         'public' => true,
         'exclude_from_search' => true,
         'publicly_queryable' => true,
@@ -625,7 +625,7 @@ function create_post_type() {
         'menu_position' => 22,
         'labels' => $labels,
         'supports' => array( 'title' )
-    );
+    ];
 
     register_post_type( 'supporter', $args );
 }
