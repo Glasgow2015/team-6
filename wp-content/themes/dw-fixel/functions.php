@@ -598,6 +598,8 @@ function create_post_type() {
         'show_in_rest'       => true
     );
 
+    register_post_type( 'member', $args );
+
     $args = array(
         'public' => true,
         'exclude_from_search' => true,
