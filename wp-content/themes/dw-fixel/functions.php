@@ -593,10 +593,8 @@ function create_post_type() {
         'show_in_nav_menus' => false,
         'menu_icon' => 'dashicons-universal-access',
         'menu_position' => 21,
-
-        'labels'             => $labels,
-        'supports'           => array( 'title' ),
-        'show_in_rest'       => true
+        'labels' => $labels,
+        'supports' => array( 'title' )
     );
 
     register_post_type( 'member', $args );
@@ -625,10 +623,8 @@ function create_post_type() {
         'show_in_nav_menus' => false,
         'menu_icon' => 'dashicons-networking',
         'menu_position' => 22,
-
-        'labels'             => $labels,
-        'supports'           => array( 'title' ),
-        'show_in_rest'       => true
+        'labels' => $labels,
+        'supports' => array( 'title' )
     );
 
     register_post_type( 'supporter', $args );
