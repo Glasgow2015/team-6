@@ -570,20 +570,20 @@ if( ! function_exists('dw_fixel_fb_meta') ) {
 add_action( 'init', 'create_post_type' );
 function create_post_type() {
     $labels = array(
-        'name'               => _x( 'Patients', 'post type general name', 'your-plugin-textdomain' ),
-        'singular_name'      => _x( 'Patient', 'post type singular name', 'your-plugin-textdomain' ),
-        'menu_name'          => _x( 'Patients', 'admin menu', 'your-plugin-textdomain' ),
-        'name_admin_bar'     => _x( 'Patient', 'add new on admin bar', 'your-plugin-textdomain' ),
+        'name'               => _x( 'Members', 'post type general name', 'your-plugin-textdomain' ),
+        'singular_name'      => _x( 'Member', 'post type singular name', 'your-plugin-textdomain' ),
+        'menu_name'          => _x( 'Members', 'admin menu', 'your-plugin-textdomain' ),
+        'name_admin_bar'     => _x( 'Member', 'add new on admin bar', 'your-plugin-textdomain' ),
         'add_new'            => _x( 'Add New', 'book', 'your-plugin-textdomain' ),
-        'add_new_item'       => __( 'Add New Patient', 'your-plugin-textdomain' ),
-        'new_item'           => __( 'New Patient', 'your-plugin-textdomain' ),
-        'edit_item'          => __( 'Edit Patient', 'your-plugin-textdomain' ),
-        'view_item'          => __( 'View Patient', 'your-plugin-textdomain' ),
-        'all_items'          => __( 'All Patients', 'your-plugin-textdomain' ),
-        'search_items'       => __( 'Search Patients', 'your-plugin-textdomain' ),
-        'parent_item_colon'  => __( 'Parent Patients:', 'your-plugin-textdomain' ),
-        'not_found'          => __( 'No patients found.', 'your-plugin-textdomain' ),
-        'not_found_in_trash' => __( 'No patients found in Trash.', 'your-plugin-textdomain' )
+        'add_new_item'       => __( 'Add New Member', 'your-plugin-textdomain' ),
+        'new_item'           => __( 'New Member', 'your-plugin-textdomain' ),
+        'edit_item'          => __( 'Edit Member', 'your-plugin-textdomain' ),
+        'view_item'          => __( 'View Member', 'your-plugin-textdomain' ),
+        'all_items'          => __( 'All Members', 'your-plugin-textdomain' ),
+        'search_items'       => __( 'Search Members', 'your-plugin-textdomain' ),
+        'parent_item_colon'  => __( 'Parent Members:', 'your-plugin-textdomain' ),
+        'not_found'          => __( 'No members found.', 'your-plugin-textdomain' ),
+        'not_found_in_trash' => __( 'No members found in Trash.', 'your-plugin-textdomain' )
     );
 
     $args = array(
@@ -591,19 +591,24 @@ function create_post_type() {
         'exclude_from_search' => true,
         'publicly_queryable' => true,
         'show_in_nav_menus' => false,
-
+        'menu_icon' => 'dashicons-admin-users',
 
         'labels'             => $labels,
-        'description'        => __( 'Description.', 'your-plugin-textdomain' ),
-        'query_var'          => true,
-        'rewrite'            => array( 'slug' => 'patient' ),
-        'capability_type'    => 'post',
-        'has_archive'        => true,
-        'hierarchical'       => false,
-        'menu_position'      => null,
-        'supports'           => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' ),
+        'supports'           => array( 'title', 'excerpt' ),
         'show_in_rest'       => true
     );
 
-    register_post_type( 'patient', $args );
+    $args = array(
+        'public' => true,
+        'exclude_from_search' => true,
+        'publicly_queryable' => true,
+        'show_in_nav_menus' => false,
+        'menu_icon' => 'dashicons-admin-users',
+
+        'labels'             => $labels,
+        'supports'           => array( 'title', 'excerpt' ),
+        'show_in_rest'       => true
+    );
+
+    register_post_type( 'member', $args );
 }
