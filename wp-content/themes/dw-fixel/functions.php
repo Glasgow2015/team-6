@@ -595,7 +595,7 @@ function create_post_type() {
         'menu_position' => 21,
 
         'labels'             => $labels,
-        'supports'           => array( 'title', 'excerpt' ),
+        'supports'           => array( 'title' ),
         'show_in_rest'       => true
     );
 
@@ -627,7 +627,7 @@ function create_post_type() {
         'menu_position' => 22,
 
         'labels'             => $labels,
-        'supports'           => array( 'title', 'excerpt' ),
+        'supports'           => array( 'title' ),
         'show_in_rest'       => true
     );
 
