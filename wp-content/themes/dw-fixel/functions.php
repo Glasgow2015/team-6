@@ -592,6 +592,7 @@ function create_post_type() {
         'publicly_queryable' => true,
         'show_in_nav_menus' => false,
         'menu_icon' => 'dashicons-admin-users',
+        'menu_position' => 21,
 
         'labels'             => $labels,
         'supports'           => array( 'title', 'excerpt' ),
@@ -623,6 +624,7 @@ function create_post_type() {
         'publicly_queryable' => true,
         'show_in_nav_menus' => false,
         'menu_icon' => 'dashicons-admin-users',
+        'menu_position' => 22,
 
         'labels'             => $labels,
         'supports'           => array( 'title', 'excerpt' ),
