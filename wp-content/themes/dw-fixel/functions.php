@@ -591,7 +591,7 @@ function create_post_type() {
         'exclude_from_search' => true,
         'publicly_queryable' => true,
         'show_in_nav_menus' => false,
-        'menu_icon' => 'dashicons-admin-users',
+        'menu_icon' => 'dashicons-universal-access',
         'menu_position' => 21,
 
         'labels'             => $labels,
@@ -623,7 +623,7 @@ function create_post_type() {
         'exclude_from_search' => true,
         'publicly_queryable' => true,
         'show_in_nav_menus' => false,
-        'menu_icon' => 'dashicons-admin-users',
+        'menu_icon' => 'dashicons-networking',
         'menu_position' => 22,
 
         'labels'             => $labels,
