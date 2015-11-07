@@ -600,6 +600,23 @@ function create_post_type() {
 
     register_post_type( 'member', $args );
 
+    $labels = array(
+        'name'               => _x( 'Supporters', 'post type general name', 'your-plugin-textdomain' ),
+        'singular_name'      => _x( 'Supporter', 'post type singular name', 'your-plugin-textdomain' ),
+        'menu_name'          => _x( 'Supporters', 'admin menu', 'your-plugin-textdomain' ),
+        'name_admin_bar'     => _x( 'Supporter', 'add new on admin bar', 'your-plugin-textdomain' ),
+        'add_new'            => _x( 'Add New', 'book', 'your-plugin-textdomain' ),
+        'add_new_item'       => __( 'Add New Supporter', 'your-plugin-textdomain' ),
+        'new_item'           => __( 'New Supporter', 'your-plugin-textdomain' ),
+        'edit_item'          => __( 'Edit Supporter', 'your-plugin-textdomain' ),
+        'view_item'          => __( 'View Supporter', 'your-plugin-textdomain' ),
+        'all_items'          => __( 'All Supporters', 'your-plugin-textdomain' ),
+        'search_items'       => __( 'Search Supporters', 'your-plugin-textdomain' ),
+        'parent_item_colon'  => __( 'Parent Supporters:', 'your-plugin-textdomain' ),
+        'not_found'          => __( 'No supporters found.', 'your-plugin-textdomain' ),
+        'not_found_in_trash' => __( 'No supporters found in Trash.', 'your-plugin-textdomain' )
+    );
+
     $args = array(
         'public' => true,
         'exclude_from_search' => true,
@@ -612,5 +629,5 @@ function create_post_type() {
         'show_in_rest'       => true
     );
 
-    register_post_type( 'member', $args );
+    register_post_type( 'supporter', $args );
 }
