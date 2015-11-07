@@ -1,0 +1,952 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: DW Question Answer\n"
+"POT-Creation-Date: 2014-02-21 15:24+0700\n"
+"PO-Revision-Date: 2014-02-21 15:24+0700\n"
+"Last-Translator: \n"
+"Language-Team: DesignWall <webmaster@designwall.com>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:28 ../template-404.php:33
+msgid "Page not found"
+msgstr ""
+
+#: ../404.php:29 ../template-404.php:34
+msgid "Oops! This page is lost! Sorry about that!"
+msgstr ""
+
+#: ../404.php:30 ../template-404.php:35
+msgid "Return to"
+msgstr ""
+
+#: ../404.php:30 ../menu-default.php:2 ../template-404.php:35
+msgid "Home"
+msgstr ""
+
+#: ../archive.php:13
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: ../archive.php:15
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: ../archive.php:15
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: ../archive.php:17
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: ../archive.php:17
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: ../archive.php:19
+msgid "Archives"
+msgstr ""
+
+#: ../comments.php:6
+#, php-format
+msgid "One comment"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../comments.php:23
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:24
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: ../comments.php:25
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: ../comments.php:30
+msgid "Comments are closed."
+msgstr ""
+
+#: ../comments.php:40
+msgid "Leave a reply"
+msgstr ""
+
+#: ../comments.php:45
+msgid "Your Name"
+msgstr ""
+
+#: ../comments.php:50
+msgid "Your Email"
+msgstr ""
+
+#: ../comments.php:53
+msgctxt "noun"
+msgid "Comment *"
+msgstr ""
+
+#: ../content-add-new.php:24
+msgid "Start writing here..."
+msgstr ""
+
+#: ../content-add-new.php:27
+msgid "Add title..."
+msgstr ""
+
+#: ../content-add-new.php:36
+msgid "Facebook block setting"
+msgstr ""
+
+#: ../content-add-new.php:37 ../inc/home.php:251
+msgid "Facebook Username"
+msgstr ""
+
+#: ../content-add-new.php:42
+msgid "Twitter block setting"
+msgstr ""
+
+#: ../content-add-new.php:43 ../content-add-new.php:53
+#: ../inc/theme-options/theme-options.php:174
+msgid "Query search"
+msgstr ""
+
+#: ../content-add-new.php:45 ../inc/theme-options/theme-options.php:142
+msgid "Consumer Key"
+msgstr ""
+
+#: ../content-add-new.php:47 ../inc/theme-options/theme-options.php:147
+msgid "Consumer Secret"
+msgstr ""
+
+#: ../content-add-new.php:52
+msgid "Instagram block setting"
+msgstr ""
+
+#: ../content-add-new.php:58
+msgid "Flickr block setting"
+msgstr ""
+
+#: ../content-add-new.php:59 ../inc/home.php:323
+#: ../inc/theme-options/theme-options.php:185 ../inc/widgets/dw-flickrs.php:67
+msgid "Flickr ID"
+msgstr ""
+
+#: ../content-add-new.php:61 ../inc/theme-options/theme-options.php:187
+msgid "Flickr ID, your flickr id example : 7801264@N03"
+msgstr ""
+
+#: ../content-add-new.php:65 ../content-social-google-plus.php:11
+msgid "Google"
+msgstr ""
+
+#: ../content-add-new.php:65
+msgid "block setting"
+msgstr ""
+
+#: ../content-add-new.php:66 ../inc/theme-options/theme-options.php:159
+msgid "Profile Name"
+msgstr ""
+
+#: ../content-add-new.php:68 ../inc/theme-options/theme-options.php:163
+msgid "Profile URL"
+msgstr ""
+
+#: ../content-add-new.php:72
+msgid "Save"
+msgstr ""
+
+#: ../content-empty.php:4
+msgid "No post"
+msgstr ""
+
+#: ../content-modal.php:4 ../single.php:14
+msgid "Share to Facebook"
+msgstr ""
+
+#: ../content-modal.php:5 ../single.php:15
+msgid "Share to Twitter"
+msgstr ""
+
+#: ../content-modal.php:6 ../single.php:16
+msgid "Share to Google+"
+msgstr ""
+
+#: ../content-modal.php:7 ../single.php:17
+msgid "Comment this post"
+msgstr ""
+
+#: ../content-modal.php:8 ../single.php:18
+msgid "Email this post"
+msgstr ""
+
+#: ../content-modal.php:9 ../single.php:19
+msgid "Print this post"
+msgstr ""
+
+#: ../content-none.php:4 ../search.php:34
+msgid "Nothing Found"
+msgstr ""
+
+#: ../content-none.php:10
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: ../content-none.php:12
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+
+#: ../content-none.php:15
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../content-page.php:24 ../functions.php:172
+msgid "Edit"
+msgstr ""
+
+#: ../dwqa-templates/content-start-wrapper.php:5
+msgid "Question & Answer"
+msgstr ""
+
+#: ../footer.php:5
+msgid "Copyight &copy; 2013 by"
+msgstr ""
+
+#: ../footer.php:6
+msgid "Proudly powered by "
+msgstr ""
+
+#: ../footer.php:8
+msgid "Theme DW Fixel by"
+msgstr ""
+
+#: ../functions.php:14
+msgid " ..."
+msgstr ""
+
+#: ../functions.php:115
+msgid "Primary Menu"
+msgstr ""
+
+#: ../functions.php:139
+msgid "Pingback:"
+msgstr ""
+
+#: ../functions.php:139
+msgid "(Edit)"
+msgstr ""
+
+#: ../functions.php:147
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../functions.php:168
+msgid "at"
+msgstr ""
+
+#: ../functions.php:175
+msgid "<i class=\"icon-reply\"></i> Reply"
+msgstr ""
+
+#: ../functions.php:200
+msgid "Set featured post"
+msgstr ""
+
+#: ../functions.php:208
+msgid "Set this post as feature and will display with big size of block"
+msgstr ""
+
+#: ../functions.php:381
+msgid "<i class=\"icon-chevron-right\"></i>"
+msgstr ""
+
+#: ../functions.php:388
+msgid "<i class=\"icon-chevron-left\"></i>"
+msgstr ""
+
+#: ../functions.php:411
+msgid "Are you cheating huh?"
+msgstr ""
+
+#: ../functions.php:415
+msgid "Your name"
+msgstr ""
+
+#: ../functions.php:418
+msgid "Your email"
+msgstr ""
+
+#: ../functions.php:420
+msgid "Your message"
+msgstr ""
+
+#: ../functions.php:425
+msgid "You have received an email from "
+msgstr ""
+
+#: ../functions.php:436
+msgid ""
+"Thanks for contacting us! Your message has been successfully sent. We will "
+"check and get back to you as soon as possible."
+msgstr ""
+
+#: ../functions.php:438
+msgid ""
+"Failed to send your message. Please try later or contact the administrator "
+"by another method."
+msgstr ""
+
+#: ../functions.php:471
+msgid "Show More"
+msgstr ""
+
+#: ../functions.php:511
+msgid "Name"
+msgstr ""
+
+#: ../functions.php:513
+msgid "Your name..."
+msgstr ""
+
+#: ../functions.php:517
+msgid "Email"
+msgstr ""
+
+#: ../functions.php:519
+msgid "Your email address..."
+msgstr ""
+
+#: ../functions.php:523
+msgid "Website"
+msgstr ""
+
+#: ../functions.php:525
+msgid "Your website url ..."
+msgstr ""
+
+#: ../functions.php:529
+msgid "Message"
+msgstr ""
+
+#: ../functions.php:531
+msgid "Your message..."
+msgstr ""
+
+#: ../functions.php:534
+msgid "Send"
+msgstr ""
+
+#: ../inc/ajaxs.php:6 ../inc/ajaxs.php:79
+msgid "Missing post id infomation."
+msgstr ""
+
+#: ../inc/ajaxs.php:12
+msgid "Post is not exists."
+msgstr ""
+
+#: ../inc/ajaxs.php:68
+msgid "Empty Post"
+msgstr ""
+
+#: ../inc/ajaxs.php:220
+msgid "Are you cheating huh"
+msgstr ""
+
+#: ../inc/ajaxs.php:225
+msgid "Your content was not empty"
+msgstr ""
+
+#: ../inc/ajaxs.php:263
+msgid "New post added"
+msgstr ""
+
+#: ../inc/ajaxs.php:364
+msgid "Do not have any post content block"
+msgstr ""
+
+#: ../inc/ajaxs.php:369
+msgid "It is special block"
+msgstr ""
+
+#: ../inc/ajaxs.php:382
+msgid "Missing query var"
+msgstr ""
+
+#: ../inc/ajaxs.php:417
+msgid "Reach over the content"
+msgstr ""
+
+#: ../inc/class-customization.php:17
+msgid "Right Sidebar"
+msgstr ""
+
+#: ../inc/class-customization.php:22
+msgid "Left Sidebar"
+msgstr ""
+
+#: ../inc/config-meta-boxes.php:8
+msgid "Gallery"
+msgstr ""
+
+#: ../inc/config-meta-boxes.php:12
+msgid "Product Images"
+msgstr ""
+
+#: ../inc/home.php:191
+msgid "Social Wall Settings"
+msgstr ""
+
+#: ../inc/home.php:217
+msgid " Build a social wall page and share your social network"
+msgstr ""
+
+#: ../inc/home.php:218
+msgid "Welcomebox Settings"
+msgstr ""
+
+#: ../inc/home.php:223 ../inc/theme-options/theme-options.php:96
+msgid "Heading 1"
+msgstr ""
+
+#: ../inc/home.php:231 ../inc/theme-options/theme-options.php:101
+msgid "Heading 2"
+msgstr ""
+
+#: ../inc/home.php:239
+msgid "Short Intro"
+msgstr ""
+
+#: ../inc/home.php:247 ../inc/theme-options/theme-options.php:41
+#: ../inc/theme-options/theme-options.php:122
+msgid "Facebook"
+msgstr ""
+
+#: ../inc/home.php:258 ../inc/theme-options/theme-options.php:46
+#: ../inc/theme-options/theme-options.php:133
+msgid "Twitter"
+msgstr ""
+
+#: ../inc/home.php:262
+msgid "Twitter Query Search"
+msgstr ""
+
+#: ../inc/home.php:266
+msgid "Returns a collection of relevant Tweets matching a specified query."
+msgstr ""
+
+#: ../inc/home.php:271
+msgid "Twitter Consumer Key"
+msgstr ""
+
+#: ../inc/home.php:275
+msgid "Consumer Key of your Twitter App, How to get it"
+msgstr ""
+
+#: ../inc/home.php:280
+msgid "Twitter Consumer Secret"
+msgstr ""
+
+#: ../inc/home.php:284
+msgid "Consumer Secret of your Twitter App, How to get it"
+msgstr ""
+
+#: ../inc/home.php:288 ../inc/theme-options/theme-options.php:61
+#: ../inc/theme-options/theme-options.php:154
+msgid "Google Plus"
+msgstr ""
+
+#: ../inc/home.php:292
+msgid "Google Plus Profile Name"
+msgstr ""
+
+#: ../inc/home.php:300
+msgid "Google Plus Profile URL"
+msgstr ""
+
+#: ../inc/home.php:307 ../inc/theme-options/theme-options.php:51
+#: ../inc/theme-options/theme-options.php:169
+msgid "Instagram"
+msgstr ""
+
+#: ../inc/home.php:311
+msgid "Instagram Search"
+msgstr ""
+
+#: ../inc/home.php:319 ../inc/theme-options/theme-options.php:71
+#: ../inc/theme-options/theme-options.php:180
+msgid "Flickr"
+msgstr ""
+
+#: ../inc/home.php:327
+msgid "How to get Flickr ID"
+msgstr ""
+
+#: ../inc/meta-box/inc/classes/meta-box.php:284
+msgid "Please correct the errors highlighted below and try again."
+msgstr ""
+
+#: ../inc/meta-box/inc/classes/meta-box.php:342
+msgid "+"
+msgstr ""
+
+#: ../inc/meta-box/inc/classes/meta-box.php:364
+msgid "&#8211;"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/file.php:65
+msgid "Error: Cannot delete file"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/file.php:79
+msgctxt "file upload"
+msgid "Delete"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/file.php:80
+msgctxt "file upload"
+msgid "Upload files"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/file.php:81
+msgctxt "file upload"
+msgid "+ Add new file"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/image.php:64
+msgid "Order saved"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/image.php:78
+#: ../inc/meta-box/inc/fields/thickbox-image.php:35
+msgctxt "image upload"
+msgid "Upload images"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/image.php:79
+msgctxt "image upload"
+msgid "+ Add new image"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/image.php:136
+msgctxt "image upload"
+msgid "Delete"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/image.php:137
+msgctxt "image upload"
+msgid "Edit"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/map.php:46
+msgid "Find Address"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/plupload-image.php:87
+msgctxt "image upload"
+msgid "Allowed Image Files"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/plupload-image.php:111
+msgctxt "image upload"
+msgid "Drop images here"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/plupload-image.php:112
+msgctxt "image upload"
+msgid "or"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/plupload-image.php:113
+msgctxt "image upload"
+msgid "Select Files"
+msgstr ""
+
+#: ../inc/meta-box/inc/fields/select-advanced.php:82
+msgid "Select a value"
+msgstr ""
+
+#: ../inc/theme-customization.php:40 ../inc/theme-options/theme-options.php:14
+#: ../inc/theme-options/theme-options.php:29
+msgid "General Settings"
+msgstr ""
+
+#: ../inc/theme-customization.php:51
+msgid "Facebook link"
+msgstr ""
+
+#: ../inc/theme-customization.php:64
+msgid "Twitter link"
+msgstr ""
+
+#: ../inc/theme-customization.php:77
+msgid "Instagram link"
+msgstr ""
+
+#: ../inc/theme-customization.php:90
+msgid "Youtube link"
+msgstr ""
+
+#: ../inc/theme-customization.php:103
+msgid "Google+ profile link"
+msgstr ""
+
+#: ../inc/theme-customization.php:116
+msgid "LinkedIn link"
+msgstr ""
+
+#: ../inc/theme-customization.php:129
+msgid "Flickr link"
+msgstr ""
+
+#: ../inc/theme-customization.php:136
+#: ../inc/theme-options/theme-options.php:20
+msgid "Archive Page Settings"
+msgstr ""
+
+#: ../inc/theme-customization.php:145
+#: ../inc/theme-options/theme-options.php:231
+msgid "Show more type"
+msgstr ""
+
+#: ../inc/theme-customization.php:150
+msgid "Show more button"
+msgstr ""
+
+#: ../inc/theme-customization.php:151
+msgid "Infinite loading"
+msgstr ""
+
+#: ../inc/theme-customization.php:161
+msgid "Logo"
+msgstr ""
+
+#: ../inc/theme-customization.php:186
+msgid "Favicon"
+msgstr ""
+
+#: ../inc/theme-customization.php:196
+msgid "Loading icon"
+msgstr ""
+
+#: ../inc/theme-customization.php:202
+msgid "Style Selector"
+msgstr ""
+
+#: ../inc/theme-customization.php:211
+msgid "Background Color"
+msgstr ""
+
+#: ../inc/theme-customization.php:222
+msgid "Page Title Color"
+msgstr ""
+
+#: ../inc/theme-customization.php:232
+msgid "Color Schemes"
+msgstr ""
+
+#: ../inc/theme-customization.php:243
+msgid "Custom Color"
+msgstr ""
+
+#: ../inc/theme-customization.php:258
+msgid "Font Selector"
+msgstr ""
+
+#: ../inc/theme-customization.php:268
+msgid "Select headding font"
+msgstr ""
+
+#: ../inc/theme-customization.php:280
+msgid "Select body font"
+msgstr ""
+
+#: ../inc/theme-customization.php:287
+msgid "Custom Code"
+msgstr ""
+
+#: ../inc/theme-customization.php:296
+msgid "Header Code"
+msgstr ""
+
+#: ../inc/theme-customization.php:306
+msgid "Footer Code"
+msgstr ""
+
+#: ../inc/theme-customization.php:447
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:17
+msgid "Homepage Settings"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:33
+msgid "Header script"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:37
+msgid "Footer script"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:42
+msgid "Link to your Facebook profile "
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:47
+msgid "Link to your Twitter profile"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:52
+msgid "Link to your Instagram profile"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:56
+msgid "Youtube"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:57
+msgid "Link to your Youtube channel"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:62
+msgid "Link to your Google Plus Profile"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:66
+msgid "LinkedIn"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:67
+msgid "Link to your LinkedIn profile"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:72
+msgid "Link to your Flickr profile"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:80
+#: ../inc/theme-options/theme-options.php:84
+msgid "Block number"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:81
+msgid "Number of blocks was show on homepage"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:91
+msgid "Welcome Box"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:92
+msgid "Change your welcome box content"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:98
+msgid "Display inside h1"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:103
+msgid "Display inside h2"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:106
+msgid "Short intro"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:110
+msgid "Background color"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:112
+msgid "Background color of welcome box"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:115
+msgid "Text color"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:117
+msgid "Text color of Welcome-box content"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:123
+msgid "Settings for your Facebook block"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:127
+msgid "Facebook name"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:134
+msgid "Settings for your Twitter block"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:138
+msgid "Username"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:144
+msgid "Consumer Key of your Twitter app"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:149
+msgid "Consumer Secret of your Twitter app"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:155
+msgid "Settings for your Google Plus block"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:170
+msgid "Settings for your Instagram block"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:181
+msgid "Settings for your Flickr block"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:194
+msgid "Contact Page"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:196
+msgid "Update infomation of your contact page"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:199
+msgid "Page title"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:203
+msgid "Page content"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:207
+msgid "Page address"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:211
+msgid "Phone"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:215
+msgid "Fax"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:219
+msgid "Google Map link"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:221
+msgid "Your addres link from Google Map"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:227
+msgid "Archive Page"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:232
+msgid "Show more type for archive page"
+msgstr ""
+
+#: ../inc/theme-options/theme-options.php:295
+msgid "DW Theme Options"
+msgstr ""
+
+#: ../inc/widgets.php:5 ../inc/widgets.php:7
+msgid "Single sidebar"
+msgstr ""
+
+#: ../inc/widgets.php:14
+msgid "Top 1"
+msgstr ""
+
+#: ../inc/widgets.php:16 ../inc/widgets.php:25 ../inc/widgets.php:34
+#: ../inc/widgets.php:43
+msgid "Appears on top"
+msgstr ""
+
+#: ../inc/widgets.php:23
+msgid "Top 2"
+msgstr ""
+
+#: ../inc/widgets.php:32
+msgid "Top 3"
+msgstr ""
+
+#: ../inc/widgets.php:41
+msgid "Top 4"
+msgstr ""
+
+#: ../inc/widgets/dw-flickrs.php:11
+msgid "Display a gallery of flickrs images"
+msgstr ""
+
+#: ../inc/widgets/dw-flickrs.php:12
+msgid "DW : Flickr Gallery"
+msgstr ""
+
+#: ../inc/widgets/dw-flickrs.php:64 ../inc/widgets/dw-next_posts.php:74
+msgid "Title"
+msgstr ""
+
+#: ../inc/widgets/dw-flickrs.php:70 ../inc/widgets/dw-next_posts.php:77
+msgid "Number"
+msgstr ""
+
+#: ../inc/widgets/dw-next_posts.php:11
+msgid "Display a list of posts"
+msgstr ""
+
+#: ../inc/widgets/dw-next_posts.php:12
+msgid "DW : Next Posts"
+msgstr ""
+
+#: ../menu-default.php:3
+msgid "Setup your menu"
+msgstr ""
+
+#: ../modal.php:15
+msgid "Content loading"
+msgstr ""
+
+#: ../search.php:9
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../search.php:37
+msgid ""
+"Sorry, but nothing matched your search criteria. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../single.php:26
+msgid "Pages:"
+msgstr ""
+
+#: ../tag.php:9
+#, php-format
+msgid "Tag : %s"
+msgstr ""

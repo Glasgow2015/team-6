@@ -1,0 +1,159 @@
+//
+// Responsive: Landscape phone to desktop/tablet
+// --------------------------------------------------
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .entry-single .entry-left {
+    width: 65%;
+  }
+
+  .entry-single .entry-right {
+    width: 33%;
+  }
+  .block-content {
+
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        z-index: 100;
+
+        #gradient > .vertical(rgba(255,255,255,0), rgba(255,255,255,1));
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .block {
+    width: 50%;
+  }
+
+  .block.grid-sizer {
+    width: 50%;
+  }
+
+  .block.w2 {
+    width: 50%;
+  }
+
+  .block.w3,
+  .block.w2.head {
+    width: 100%;
+  }
+
+  .head {
+    height: auto !important;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .headline {
+
+    .entry-title {
+      font-size: 42px;
+    }
+  }
+
+  .product-detail .product {
+    .related.products .item {
+      margin: 0.5%;
+      width: 49%;
+    }
+
+    .summary,
+    .images {
+      width: 100%;
+    }
+
+    .summary {
+
+      text-align: center;
+
+      .product_detail {
+        clear: both;
+      }
+
+      .add-to-cart .btn {
+        display: inline-block;
+      }
+    }
+
+    .images a {
+      text-align: center;
+    }
+  }
+
+  .block.head .block-inner {
+    padding: 25px 50px;
+    height: auto !important;
+  }
+
+  .the-icons li {
+    width: 50%;
+  }
+
+  footer .row-fluid > div[class*="span"] {
+    width: 50% !important;
+  }
+
+  footer {
+    margin: 20px;
+  }
+
+  footer .row-fluid [class*="span"] {
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  footer .logo-ft {
+    margin-left: 0;
+  }
+
+  .single-detail {
+    .main-content {
+        padding: 20px 30px 60px 90px;
+        .box-sizing(border-box);
+        width: 100% !important;
+    }
+  }
+  .single-page {
+    .main-content {
+        padding: 20px 30px 60px 30px;
+        .box-sizing(border-box);
+        width: 100% !important;
+    }
+  }
+  .side-bar {
+    display: none !important;
+  }
+
+  .entry-single {
+
+    .entry-left {
+      float: none;
+      width: 100%;
+      padding-right: 0px;
+    }
+
+    .entry-right {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  .js-ready .nav-wrap {
+    width: 70%;
+  }
+
+  .csstransforms3d.csstransitions.js-nav #inner-wrap,
+  .csstransforms3d.csstransitions.js-nav #mobile-header {
+    .transform(~'translate3d(70%, 0, 0) scale3d(1, 1, 1)');
+  }
+
+}

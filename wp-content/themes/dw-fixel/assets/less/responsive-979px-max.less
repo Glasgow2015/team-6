@@ -1,0 +1,371 @@
+//
+// Responsive: Tablet to desktop
+// --------------------------------------------------
+
+@media (min-width: 769px) and (max-width: 979px) {
+
+  .tw .social-content {     
+    padding: 0 15px !important;
+
+    .twitter-link {
+      margin-top: 5% !important;
+    }
+  }
+
+}
+
+
+@media (max-width: 979px) {
+
+  html {
+    overflow-x: hidden;
+  }
+  html.js-nav.touch {
+    overflow-y: hidden;
+  }
+
+  .header-wrapall {
+    background-color: transparent;
+    border-bottom: transparent;
+    height: auto;
+  }
+
+  .product-detail .product {
+    .summary .add-to-cart .btn {
+      display: block;
+      margin: 0 15px 20px 0;
+    }
+  }
+
+  .block.format-product {
+
+    .block-inner {
+
+      img {
+        width: 60%;
+      }
+    }
+  }
+
+  .top-widget {
+    .mCSB_container {
+      margin-right: 0;
+    }
+  }
+  .top-widget .widget {
+
+    padding-right: 10px;
+
+    p {
+      margin: 5px 0;
+    }
+
+    .socials-connect li {
+      width: 100%;
+    }
+  }
+
+  #header {
+    margin: 0;
+    background: @gray;
+    border-bottom: none;
+    .transition(none);
+
+    .nav-wrap {
+      .mCSB_container {
+        margin-right: 0;
+      }
+    }
+  }
+
+  #outer-wrap {
+    z-index: auto;
+  }
+
+  #header,
+  .header-wrap {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    .js-nav & {
+      z-index: 10000;
+    }
+  }
+
+  .top-widget-showing {
+    #header {
+      display: none;
+    }
+    #mobile-header {
+      .translateY(230px);
+      position: fixed;
+      left: 0;
+      right: 0;
+      background-color: @white;
+      z-index: 10000;
+      border-top: 1px solid @gray9;
+    }
+  } 
+
+  #inner-wrap {
+    background: @gray;
+    overflow: hidden;
+  }
+
+  footer .logo-ft {
+    margin-left: 20px;
+  }
+
+  .main-content {
+      padding: 50px 100px 20px 100px;
+      .box-sizing(border-box);
+  }
+
+  .single-page .main-content {
+      padding: 50px;
+  }
+
+  .header-wrap header#top,
+  .nav-wrap .topbtn {
+    display: none;
+    position: absolute;
+  }
+
+  .social-link {
+    display: block;
+    float: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .admin-bar & {
+      top: 32px;
+    }
+  }
+  #nav {
+    margin-top: 64px;
+
+    .admin-bar & {
+      margin-top: 92px;
+    }
+  }
+
+  #mobile-header {
+    position: fixed;
+    width: 100%;
+    background: @white;
+    z-index: 99999;
+    border-bottom: 3px solid @gray9;
+
+    .logo {
+      float: none;
+      height: 61px;
+      padding: 12px 0 0 0;
+      width: auto;
+      margin: 0 auto;
+      text-align: center;
+      background-color: transparent;
+    }
+
+    .navbtn {
+      float: left;
+      margin: -60px 0;
+    }
+
+    .topbtn {
+      display: block;
+      float: right;
+      margin: -60px 0 0 0;
+
+      a {
+        background-color: transparent;
+      }
+    }
+  }
+
+  #main {
+    padding-top: 60px;
+  }
+
+  #back-to-top {
+    display: none !important;
+  }
+
+  .top-btn i {
+    color: @grayLight;
+  }
+
+  // #nav sub-menu style ---------------------------------------------------------------------
+  #nav ul {
+
+    li {
+      position: relative;
+      background: @gray;
+
+      i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        cursor: pointer;
+        text-align: center;
+        font-size: 18px;
+      }
+    }
+
+    li.current-menu-item > a {
+      color: @linkColorHover;
+    }
+
+    li > a:hover {
+      color :#675C7C;
+    }
+
+    li.show-sub-menu > .show-sub-menu-btn {
+      
+      .rotate(180deg);
+    }
+
+    li.show-sub-menu > .sub-menu {
+      max-height: 1000px;
+      .transition(max-height 1s);
+
+      .touch & {
+        .transition(none);
+      }
+    }
+
+    ul.sub-menu {
+      margin: 0;
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      .transition(max-height .3s);
+
+      .touch & {
+        .transition(none);
+      }
+
+      li a {
+        padding-left: 50px;
+        font-size: @bigFontSize;
+        font-weight: normal;
+        outline:0;
+
+        &:hover {
+          color:#675C7C;
+        }
+      }
+
+      ul.sub-menu {
+
+        li a {
+          padding-left: 70px;
+        }
+      }
+    }
+  }
+
+  .topbtn {
+    i {
+      background: transparent;
+      border-right: none;
+      border-left: 1px solid @borderSHeaderColor;
+    }
+  }
+
+  // #nav for off-canvas menu ---------------------------------------------------
+  #nav ul {
+    margin: 0;
+    padding: 0 !important;
+
+    li {
+      width: 100%;
+      margin: 0;
+      border-top: 1px solid #2E2E2E;
+      .box-sizing(border-box);
+
+      a {
+        padding: 22px 30px;
+        display: block;
+        font-size: @bigFontSize;
+        font-weight: @medium1FontWeight;
+        line-height: 1em;
+        color: @white;
+        .opacity(100);
+      }
+    }
+  }
+
+  .nav-wrap {
+    position: absolute;
+    top: 0;
+  }
+  .nav-wrap:not(:target) {
+    z-index: 1;
+    height: 0;
+  }
+  .nav-wrap:target .close-btn {
+    display: block;
+  }
+  .nav-wrap .close-btn {
+    position: absolute;
+    top: -3.75em;
+    left: 30px;
+  }
+  .nav-wrap .top-wrap {
+    position: relative;
+    padding: 0;
+  }
+
+  .js-ready .nav-wrap {
+    height: 100%;
+    width: 40%;
+    background: transparent;
+    .box-shadow(none);
+
+    #nav li {
+      .box-shadow(inset -1.5em 0 1.5em -0.75em rgba(0, 0, 0, 0.25));
+    }
+  }
+  .js-ready .nav-wrap .top-wrap {
+    background: transparent;
+  }
+  .js-ready .nav-wrap .close-btn {
+    display: block;
+    .opacity(70);
+  }
+  .js-ready .nav-wrap .close-btn:focus, .js-ready .nav-wrap .close-btn:hover {
+    .opacity(100);
+  }
+
+  .csstransforms3d.csstransitions.js-ready #inner-wrap,
+  .csstransforms3d.csstransitions.js-ready #mobile-header {
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: -moz-transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    transition: transform 500ms ease;
+  }
+  .touch.csstransforms3d.csstransitions.js-ready #inner-wrap,
+  .touch.csstransforms3d.csstransitions.js-ready #mobile-header {
+    .backface-visibility(hidden);
+  }
+
+  .csstransforms3d.csstransitions.js-nav #inner-wrap,
+  .csstransforms3d.csstransitions.js-nav #mobile-header {
+    .transform(~'translate3d(40%, 0, 0) scale3d(1, 1, 1)');
+  }
+
+  .js-nav #inner-wrap {
+    z-index: 10000;
+    position: relative;
+  }
+
+}

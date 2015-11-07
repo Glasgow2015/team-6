@@ -1,0 +1,96 @@
+//
+// Alerts
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.alert {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 8px 35px 8px 54px;
+  margin-bottom: @baseLineHeight;
+  text-shadow: 0 1px 0 rgba(255,255,255,.5);
+  background-color: @warningBackground;
+  border: 1px solid @warningBorder;
+
+  span[class*='icon-'] {
+    position: absolute;
+    top: 25%;
+    left: 15px;
+    font-size: 20px;
+  }
+}
+.alert,
+.alert h4 {
+  // Specified for the h4 to prevent conflicts of changing @headingsColor
+  color: @warningText;
+}
+.alert h4 {
+  margin: 0;
+}
+
+// Adjust close link position
+.alert .close {
+    background: none;
+    border: none;
+    color: @gray2;
+    .opacity(75);
+    font-size: 20px;
+    font-weight: @medium3FontWeight;
+    line-height: 1;
+    margin: 0;
+    padding: 0 3px;
+    position: absolute;
+    right: 5px;
+    top: 25%;
+    .transition(all 0.1s linear 0s) !important;
+}
+
+
+// Alternate styles
+// -------------------------
+
+.alert-success {
+  background-color: @successBackground;
+  border-color: @successBorder;
+  color: @successText;
+}
+.alert-success h4 {
+  color: @successText;
+}
+.alert-danger,
+.alert-error {
+  background-color: @errorBackground;
+  border-color: @errorBorder;
+  color: @errorText;
+}
+.alert-danger h4,
+.alert-error h4 {
+  color: @errorText;
+}
+.alert-info {
+  background-color: @infoBackground;
+  border-color: @infoBorder;
+  color: @infoText;
+}
+.alert-info h4 {
+  color: @infoText;
+}
+
+
+// Block alerts
+// -------------------------
+
+.alert-block {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.alert-block > p,
+.alert-block > ul {
+  margin-bottom: 0;
+}
+.alert-block p + p {
+  margin-top: 5px;
+}

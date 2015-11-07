@@ -1,0 +1,228 @@
+//
+// Carousel
+// --------------------------------------------------
+
+
+.carousel {
+  position: relative;
+  margin-bottom: @baseLineHeight;
+  line-height: 1;
+}
+
+.carousel-inner {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-inner {
+
+  > .item {
+    display: none;
+    position: relative;
+    overflow: hidden;
+    .transition(.6s ease-in-out left);
+
+    // Account for jankitude on images
+    > img,
+    > a > img {
+      width: 100%;
+      display: block;
+      line-height: 1;
+      .transition(transform 0.4s);
+    }
+  }
+
+  > .active,
+  > .next,
+  > .prev { display: block; }
+
+  > .active {
+    left: 0;
+  }
+
+  > .next,
+  > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  > .next {
+    left: 100%;
+  }
+  > .prev {
+    left: -100%;
+  }
+  > .next.left,
+  > .prev.right {
+    left: 0;
+  }
+
+  > .active.left {
+    left: -100%;
+  }
+  > .active.right {
+    left: 100%;
+  }
+
+}
+
+// Left/right controls for nav
+// ---------------------------
+
+.carousel:hover .carousel-control { 
+  visibility: visible; 
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-weight: 100;
+  line-height: 11px;
+  color: @white;
+  text-align: center;
+  border: 3px solid @white;
+  background: @linkColorHover;
+  border: 2px solid @white;
+
+  //visibility: hidden; 
+  visibility: visible; 
+  .border-radius(23px);
+  .opacity(50);
+  .transition(all 0.4s);
+
+  i {
+    font-size: 17px;
+    display: block;
+    line-height: 40px;
+  }
+
+  // Reposition the right one
+  &.right {
+    left: auto;
+    right: 15px;
+
+    i {
+      margin-left: 1px;
+    }
+  }
+
+  // Hover/focus state
+  &:hover,
+  &:focus {
+    color: @white;
+    text-decoration: none;
+    .opacity(90);
+  }
+}
+
+// Carousel indicator pips
+// -----------------------------
+.carousel-indicators {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  z-index: 5;
+  margin: 0;
+  list-style: none;
+
+  li {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    text-indent: -999px;
+    background-color: @white;
+    cursor: pointer;
+    .border-radius(8px);
+    .box-sizing(border-box);
+  }
+  .active {
+    background-color: transparent;
+    border: 3px solid @white;
+    .border-radius(500px);
+  }
+}
+
+// Caption for text below images
+// -----------------------------
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+  background: @grayDark;
+  background: rgba(0,0,0,.75);
+  height: auto;
+  width: 100%;
+  top: auto;
+  .opacity(0);
+  .translateY(100%);
+  .touch & {
+    .opacity(100);
+    .translateY(0px);
+  }
+  .transition(all 0.4s);
+}
+.carousel-caption h4,
+.carousel-caption p {
+  color: @white;
+  line-height: @baseLineHeight;
+}
+.carousel-caption h4 {
+  margin: 0 0 5px;
+  text-transform: uppercase;
+}
+.carousel-caption p {
+  margin: 0;
+}
+.carousel-caption a {
+  color: @white;
+}
+
+// #carousel
+
+.carousel:hover .carousel-caption,
+.carousel .item.cs-hover .carousel-caption {
+  .opacity(100);
+  .translateY(0px);
+}
+
+//# carousel fade effect ------------
+// .carousel {
+//   .carousel-inner {
+//     .item {
+//        .opacity(0);
+//        .transition(opacity 2s);
+//     }
+
+//     .active {
+//       .opacity(100);
+//     }
+
+//     .active.left,
+//     .active.right {
+//       left: 0;
+//       .opacity(0);
+//       z-index: 2;
+//     }
+
+//     .next.left,
+//     .prev.right {
+//       .opacity(100);
+//       z-index: 1;
+//     }
+//   }
+
+//   .carousel-control {
+//     z-index: 2;
+//   }
+// }

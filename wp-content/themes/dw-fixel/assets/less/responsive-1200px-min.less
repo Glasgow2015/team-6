@@ -1,0 +1,185 @@
+//
+// Responsive: Large desktop and up
+// --------------------------------------------------
+
+@media (min-width: 0px){
+
+  // form required
+  .contact-form {
+    input:not([type=range]):not([type=url]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]),
+    textarea {
+      //background: transparent no-repeat top right;
+    }
+
+    input:not([type=range]):not([type=url]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]):required,
+    textarea:required {
+      //background: transparent no-repeat top right;
+    }
+
+    input:not([type=range]):not([type=url]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]):focus:invalid,
+    textarea:focus:invalid { 
+      border-bottom: 1px solid @linkColorHover;
+    } 
+    input:not([type=range]):not([type=url]):not([type=date]):not([type=submit]):not([type=button]):not([type=checkbox]):not([type=number]):focus:valid,
+    textarea:focus:valid { 
+      //background: transparent no-repeat top right;
+    }
+  }
+
+  // checkbox styled on social setting modal
+  .modal.normal .help {
+    input[type="checkbox"] {
+        display:none;
+    }
+
+    input[type="checkbox"] + label {
+        color: @grayLight;
+    }
+
+    input[type="checkbox"] + label span {
+        display:inline-block;
+        width:19px;
+        height:19px;
+        margin:-1px 4px 0 0;
+        vertical-align:middle;
+        background:url(../img/check_radio_sheet.png) left top no-repeat;
+        cursor:pointer;
+    }
+
+    input[type="checkbox"]:checked + label span {
+        background:url(../img/check_radio_sheet.png) -19px top no-repeat;
+    }
+  }
+}
+
+@media (min-width: 1441px) {
+  .topbtn {
+    display: block;
+    position: absolute;
+    right: -120px;
+    border-left: 1px solid @gray9;
+  }
+}
+
+@media (max-width: 1440px) {
+  .topbtn {
+    display: none;
+  }
+  .header-wrap .topbtn {
+    display: block;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  
+  #main, 
+  .header-wrap,
+  footer {
+    width: 1200px;
+  }
+
+  .block-content img {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 1200px) {
+
+  body.admin-bar {
+    .close i {
+      top: 0px !important;
+    }
+  }
+
+  .modal-buttons .close {
+    position: relative;
+
+    i {
+      position: relative;
+    }
+  }
+
+  .top-widget .widget {
+
+    .input-append {
+      input {
+        width: 100%;
+      }
+      button {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  .modal-buttons .close {
+    right: 0;
+  }
+  
+  .social-link li,
+  .social-link li:first-child,
+  #nav .top-wrap > ul {
+    border: none !important;
+  }
+  
+  #main {
+    padding-top: 62px;
+  }
+
+  .headline {
+    margin-bottom: -62px;
+    border-bottom: 0;
+  }
+
+  .modal.fade,
+  .modal.fade.in {
+    top: 0px;
+  }
+  .modal-showing #header {
+    height: 60px;
+  }
+
+  .top-widget-wrap {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .top-widget .widget {
+    .socials-connect li {
+      width: 100%;
+    }
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+  #header {
+    margin-bottom: 0;
+  }
+
+  #nav ul {
+    padding-left: 0 !important;
+  }
+
+}
+
+@media (min-width: 979px) and (max-width: 1200px) {
+
+  // top panel fix
+  #main.mtop {
+    margin-top: 60px;
+  }
+  #header {
+  	margin-bottom: -63px;
+  }
+  .block.format-post .nav-tabs li a {
+    width: 28px;
+  }
+  .block.format-post .setting label {
+    margin-bottom: 0;
+  }
+
+}

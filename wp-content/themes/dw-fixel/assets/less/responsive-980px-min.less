@@ -1,0 +1,238 @@
+//
+// Responsive: Between Tablet and PC
+// --------------------------------------------------
+
+@media (min-width: 980px) and (max-width: 1199px) {
+
+  footer .logo-ft {
+    margin-left: 20px;
+  }
+
+  .logo {
+    margin-left: 15px;
+  }
+
+  .entry-single .entry-left {
+    width: 70%;
+  }
+
+  .entry-single .entry-right {
+    width: 28%;
+  }
+
+  .block.head .block-inner {
+    padding: 20px 80px 20px 80px;
+  }
+
+}
+
+
+@media (min-width: 980px) {
+
+  #mobile-header {
+    display: none;
+    position: absolute;
+  }
+
+  .nav-wrap{
+    .mCustomScrollBox,
+    .mCSB_container {
+      overflow: visible !important;
+    }
+  }
+
+  // #nav
+  .nav-wrap {
+    width: 100%;
+
+    #nav {
+      z-index: 10000;
+      position: relative;
+    }
+  }
+
+  #navbtn,
+  #socialbtn {
+    display: none;
+  }
+
+  #top .nav-btn {
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  #nav .close-btn {
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  #nav {
+    height: auto !important;
+  }
+
+  // #nav ------------------------------
+  #nav {
+    float: left;
+    height: 60px;
+
+    ul {
+      padding-left: 30px;
+      border-left: 1px solid @gray9;
+    }
+
+    li.current-menu-item > a {
+      color: @linkColorHover;
+    }
+
+    li {
+      float: left;
+      margin: 0 35px 0 0;
+      position: relative;
+
+      i {
+        float: left;
+        margin-left: 8px;
+        margin-top: 23px;
+        color: @gray2;
+      }
+    }
+    a {
+      text-transform: uppercase;
+      font-weight: @medium2FontWeight;
+      color: @grayLight;
+      font-size: @bigFontSize;
+      font-family: @menuFontFamily;
+      padding: 20px 0;
+      display: block;
+      float: left;
+
+      &:hover {
+        color: @linkColorHover;
+      }
+    }
+
+    li > span {
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: @linkColorHover;
+      bottom: 15px;
+      left: 0;
+      .transition( width .3s );
+    }
+
+    li:hover span,
+    li.current-menu-item span {
+      width: 100%;
+    }
+    li:hover i,
+    li.current-menu-item i,
+    li:hover > a {
+      color: @linkColorHover;
+    }
+  }
+
+  // # nav submenu ----------------------------------------
+  // ~ reset
+  #nav .menu, #nav .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  #nav .menu:before,
+  #nav .menu:after {
+    content: "";
+    display: table;
+  }
+
+  #nav .menu:after {
+    clear: both;
+  }
+
+  #nav .menu {
+    padding-left: 30px;
+    zoom:1;
+  }
+  // ~ selector
+  #nav .menu ul {
+    margin: 0;
+    clip: rect(0,0,0,0);
+    position: absolute;
+    top: 61px;    
+    background: @white;
+    color: @grayLight;
+    box-shadow: 0 -1px 0 rgba(255,255,255,.3);  
+    .opacity(0);
+    .transition(~'opacity 0.3s 0s ease-out, margin 0.3s 0s ease-out');
+
+    i:before {
+      content: "\f0da";
+    }
+
+    ul {
+      top: 0;
+      left: 220px;
+      margin: 0 0 0 20px;
+      margin-top: -1px !important;
+      box-shadow: -1px 0 0 rgba(255,255,255,.3);
+    }
+
+    li {
+      float: none;
+      display: block;
+      border: 0;
+      margin: -15px 0 0 0;
+      box-shadow: 1px 1px 0 @gray9;
+      .transition(~'opacity 0.15s 0s ease-out, margin 0.3s 0s ease-out');
+    }
+      
+    i {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin-top: 13px;
+      margin-right: 11px;
+    }
+
+    ul li:first-child {
+      border-top: 1px solid @gray9;
+    }
+    li:last-child {
+      box-shadow: 1px 0 0 @gray9;
+      border-bottom: 1px solid @gray9;
+    }
+
+    a {    
+      padding: 10px 25px 10px 15px;
+      width: 180px;
+      display: block;
+      float: none;
+      text-transform: none;
+
+      &:hover {
+        color: @linkColorHover;
+      }
+    }
+  }
+
+  #nav .menu li:hover > ul {
+    margin: 0;
+    .opacity(100);
+    clip: rect(-1px,1000px,1000px, 0);
+
+    li {
+      margin-top: 0;
+      .opacity(100);
+    }
+  }
+}

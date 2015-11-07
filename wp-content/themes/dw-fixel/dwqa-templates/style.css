@@ -1,0 +1,10 @@
+[class*="dwqa-question"] .single-page .main-content {
+	padding: 30px;
+	background-color: #fff;
+}
+[class*="dwqa-question"] .single-page .dw-question .entry-content {
+	padding: 0 0 10px 0;
+}
+.dwqa-container .comment-form #submit {
+	width: auto;
+}

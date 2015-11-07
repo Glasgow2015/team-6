@@ -1,0 +1,58 @@
+//
+// Code (inline and blocK)
+// --------------------------------------------------
+
+
+// Inline and block code styles
+code,
+pre {
+  padding: 0 3px 2px;
+  font-size: @baseFontSize - 2;
+  color: @grayDark;
+  .border-radius(3px);
+}
+
+// Inline code
+code {
+  padding: 2px 4px;
+  color: #d14;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+  white-space: nowrap;
+}
+
+// Blocks of code
+pre {
+  width: 100%;                          /* specify width  */
+  white-space: pre-wrap;                 /* CSS3 browsers  */
+  white-space: -moz-pre-wrap !important; /* 1999+ Mozilla  */
+  white-space: -o-pre-wrap;              /* Opera 7 and up */
+  word-wrap: break-word;                 /* IE 5.5+ and up */
+  margin: 0 0 15px 0;
+  padding: 0 10px;
+  font-size: 13px;
+  background-color: @grayLighter;
+  overflow: auto;
+  .box-sizing(border-box);
+
+  // Make prettyprint styles more spaced out for readability
+  &.prettyprint {
+    margin-bottom: @baseLineHeight;
+  }
+
+  // Account for some code outputs that place code tags in pre tags
+  code {
+    padding: 0;
+    color: inherit;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border: 0;
+  }
+}
+
+// Enable scrollable blocks of code
+.pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}

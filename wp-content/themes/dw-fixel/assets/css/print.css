@@ -1,0 +1,38 @@
+body {
+	background: #fff;
+}
+
+.modal-wrap {
+	visibility: hidden;
+}
+.modal-wrap .scroller {
+	margin: 0;
+	padding: 0 20px;
+	background: none;
+	border: none;
+	visibility: visible !important;
+}
+
+#header,
+#mobile-header,
+#comments, 
+.modal-header,
+.social-bar,
+.top-widget,
+.modal-buttons,
+.modal-showing #inner-wrap,
+#inner-wrap .site-footer {
+	display: none;
+}
+
+.main-content a:after {
+	content: "" !important;
+}
+
+.modal,
+.main-content,
+.single-detail {
+	display: block !important;
+	visibility: visible !important;
+	background-color: #fff !important;
+}

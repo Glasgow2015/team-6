@@ -1,0 +1,409 @@
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+// # layout -----------------------------------------------------------
+
+[class*="span"] {
+  float: left;
+  min-height: 0px;
+}
+
+#main, 
+.header-wrap,
+footer {
+  width: 1200px;
+}
+
+#mobile-header {
+  display: none;
+  position: absolute;
+}
+
+.modal.normal .help {
+  clear: both;
+
+  button {
+    margin-top: 10px !important;
+  }
+
+  input[type="checkbox"] {
+    border: none;
+    display: inline-block;
+    float: left;
+    padding: 0 3px 0 0;
+    height: 20px;
+    outline: 0;
+  }
+  label {
+    display: inline-block;
+    float: left;
+    color: @grayLight;
+  }
+  a {
+    color: @grayLight;
+  }
+}
+
+input {
+  padding-top: 7px !important;
+}
+
+// # block ----------------------------------------------------------
+
+.block {
+  width: 300px;
+  height: 300px;
+}
+.block.w2 {
+  width: 600px;
+  height: 600px;
+}
+.block.w3 {
+  width: 900px;
+  height: 600px;
+}
+
+.format-video {
+
+  .view-video:hover .mask, {
+    background-color: @black;
+    .opacity(70) !important;
+  }
+
+  i {
+    .opacity(0);
+  }
+  &:hover i {
+    .opacity(80) !important;
+  }
+}
+
+.fb .social-content {
+  iframe {
+    top: 180px !important;
+  }
+}
+
+.format-image,
+.format-standard,
+.format-video {
+
+  .view-pic:hover .mask {
+    background-color: @black;
+    .opacity(70) !important;
+  }
+
+  .view-social:hover .mask,
+  .view-social.hover .mask {
+    background-color: @black;
+    .opacity(70) !important;
+  }
+
+  i,
+  .line {
+    .opacity(0) !important;
+  }
+  &:hover i,
+  &:hover .line {
+    .opacity(70) !important;
+  }
+
+  .social-content {
+    display: none !important;
+
+    iframe {
+      position: relative;
+      z-index: 10500;
+    }
+  }
+
+  &:hover .social-content,
+  .hover .social-content {
+    display: block !important;
+  }
+}
+
+.block-inner.loading {
+
+  .opacity(70) !important;
+
+  img {
+    z-index: -1;
+  }
+
+  &:before {
+
+    .format-standard & {
+      background-color: transparent !important;
+    }
+  }
+
+  .mask {
+    display: none !important;
+  }
+}
+
+.view-product {
+
+  &:hover .mask {
+    background-color: @black;
+    .opacity(70) !important;
+  }
+
+  i {
+    .opacity(0);
+  }
+
+  &:hover i {
+    .opacity(80) !important;
+  }
+}
+
+.social-bar {
+
+  a.print {
+    .modal & {
+      position: absolute;
+      bottom: 0;
+      border-top: 1px solid @gray13;
+    }
+  }
+}
+
+.tw .social-content {
+  margin-top: 10% !important;
+}
+
+// # base css ---------------------------------------------------------
+
+.topbtn {
+  display: none;
+}
+.header-wrap .topbtn {
+  display: block;
+}
+
+.quantity {
+  input {
+    display: inline-block !important;
+  }
+}
+
+input {
+  padding-top: 10px;
+}
+
+// # top-panel ------------------------------------------------------
+
+.top-widget {
+  top: -230px;
+}
+
+.top-widget-showing {
+  #header {
+    top: 230px;
+    margin: 0;
+  }
+  .top-widget {
+    top: 0;
+  }
+}
+
+// #nav
+.nav-wrap {
+  width: 100%;
+
+  #nav {
+    z-index: 10000;
+    position: relative;
+  }
+
+  .mCustomScrollBox,
+  .mCSB_container {
+    overflow: visible !important;
+  }
+}
+
+#navbtn,
+#socialbtn {
+  display: none;
+}
+
+#top .nav-btn {
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#nav .close-btn {
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+#nav {
+  height: auto !important;
+}
+
+// #nav ------------------------------
+#nav {
+  float: left;
+  height: 60px;
+
+  ul {
+    padding-left: 30px;
+    border-left: 1px solid @gray9;
+  }
+
+  li {
+    float: left;
+    margin: 0 40px 0 0;
+    position: relative;
+
+    i {
+      float: left;
+      margin-left: 8px;
+      margin-top: 23px;
+    }
+  }
+  a {
+    text-transform: uppercase;
+    font-weight: @medium2FontWeight;
+    color: @grayLight;
+    font-size: @bigFontSize;
+    font-family: @menuFontFamily;
+    padding: 20px 0;
+    display: block;
+    float: left;
+
+    &:hover {
+      color: @grayDark;
+    }
+  }
+
+  li > span {
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: @linkColorHover;
+      bottom: 15px;
+      left: 0;
+      .transition( width .3s );
+    }
+
+  li:hover span,
+  li.current-menu-item span {
+    width: 100%;
+  }
+  li:hover i,
+  li.current-menu-item i,
+  li.current-menu-item a,
+  li:hover > a {
+    color: @linkColorHover;
+  }
+}
+
+// # nav submenu ----------------------------------------
+// ~ reset
+#nav .menu, #nav .menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#nav .menu:before,
+#nav .menu:after {
+  content: "";
+  display: table;
+}
+
+#nav .menu:after {
+  clear: both;
+}
+
+#nav .menu {
+  padding-left: 30px;
+  zoom:1;
+}
+// ~ selector
+#nav .menu ul {
+  margin: 0;
+  clip: rect(0,0,0,0);
+  position: absolute;
+  top: 60px;    
+  background: @white;
+  color: @grayLight;
+  border-top: 1px solid @gray9;
+  .opacity(0);
+  .transition(~'opacity 0.3s 0s ease-out, margin 0.3s 0s ease-out');
+
+  i:before {
+    content: "\f0da";
+  }
+
+  ul {
+    top: 0;
+    left: 220px;
+    margin: 0 0 0 20px;
+    border-top: 1px solid @gray9;
+    margin-top: -2px !important;
+    border-left: 1px solid @gray9;
+  }
+
+  li {
+    float: none;
+    display: block;
+    border: 0;
+    margin: -15px 0 0 0;
+    border-right: 1px solid @gray9;
+    border-bottom: 1px solid @gray9;
+    .transition(~'opacity 0.15s 0s ease-out, margin 0.3s 0s ease-out');
+  }
+    
+  i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 13px;
+    margin-right: 11px;
+  }
+
+  ul li:first-child {
+    border-top: 1px solid @gray9;
+  }
+  li:last-child {
+    border-right: 1px solid @gray9;
+    border-bottom: 1px solid @gray9;
+  }
+
+  a {    
+    padding: 10px 25px 10px 15px;
+    width: 180px;
+    display: block;
+    float: none;
+    text-transform: none;
+
+    &:hover {
+      color: @linkColorHover;
+    }
+  }
+}
+
+#nav .menu li:hover > ul {
+  margin: 0;
+  .opacity(100);
+  clip: rect(-1px,1000px,1000px, 0);
+
+  li {
+    margin-top:0;
+    .opacity(100);
+  }
+}
