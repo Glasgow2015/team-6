@@ -630,4 +630,36 @@ function create_member_type() {
     ];
 
     register_post_type( 'supporter', $args );
+
+    // Prevalence Statistirc
+    $labels = [
+        'name'               => _x( 'Prevalence Statistics', 'post type general name', 'your-plugin-textdomain' ),
+        'singular_name'      => _x( 'Statistic', 'post type singular name', 'your-plugin-textdomain' ),
+        'menu_name'          => _x( 'Prevalence Statistics', 'admin menu', 'your-plugin-textdomain' ),
+        'name_admin_bar'     => _x( 'Prevalence Statistic', 'add new on admin bar', 'your-plugin-textdomain' ),
+        'add_new'            => _x( 'Add New', 'book', 'your-plugin-textdomain' ),
+        'add_new_item'       => __( 'Add New Statistic', 'your-plugin-textdomain' ),
+        'new_item'           => __( 'New Statistic', 'your-plugin-textdomain' ),
+        'edit_item'          => __( 'Edit Statistic', 'your-plugin-textdomain' ),
+        'view_item'          => __( 'View Statistic', 'your-plugin-textdomain' ),
+        'all_items'          => __( 'All Statistic', 'your-plugin-textdomain' ),
+        'search_items'       => __( 'Search Statistic', 'your-plugin-textdomain' ),
+        'parent_item_colon'  => __( 'Parent Statistic:', 'your-plugin-textdomain' ),
+        'not_found'          => __( 'No supporters found.', 'your-plugin-textdomain' ),
+        'not_found_in_trash' => __( 'No supporters found in Trash.', 'your-plugin-textdomain' )
+    ];
+
+    $args = [
+        'public' => true,
+        'exclude_from_search' => true,
+        'publicly_queryable' => true,
+        'show_in_nav_menus' => false,
+        'menu_icon' => 'dashicons-chart-pie',
+        'menu_position' => 31,
+        'labels' => $labels,
+        'supports' => false
+    ];
+
+    register_post_type( 'prevalence', $args );
+}
 }
