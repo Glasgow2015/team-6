@@ -44,7 +44,11 @@
     });
 
     for (var i = 0; i < network.length; i++) {
-      var source = network[i].patient.code;
+      var p = network[i].patient;
+      var source = p.code;
+
+      var contentString = '<div>' + p.name || '' + '<img src="' + p.picture || '' + '">' + p.email || '' + '</div>';
+      var infoWindow = new google.maps.InfoWindow({content: contentString});
     
       var marker = new google.maps.Marker({
         position: source,
@@ -52,15 +56,27 @@
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         icon: imagePat
       });
+
+      marker.addListener('click', function(marker, infoWindow) {
+        infoWindow.open(map, marker);
+      }.bind(this, marker, infoWindow));
       
       var supporters = network[i].support;
       for (var j = 0; j < supporters.length; j++) {
+        var s = supporters[j];
+        contentString = '<div>' + s.name || '' + '<img src="' + s.picture || '' + '">' + s.email || '' + '</div>';
+        infoWindow = new google.maps.InfoWindow({content: contentString});
+
         var marker = new google.maps.Marker({
           position: supporters[j].code,
           map: map,
           mapTypeId: google.maps.MapTypeId.TERRAIN,
           icon: imageSup
         });
+
+        marker.addListener('click', function(marker, infoWindow) {
+          infoWindow.open(map, marker);
+        }.bind(this, marker, infoWindow));
 
         var paths = [supporters[j].code, source];
         var flightPath = new google.maps.Polyline({
