@@ -39,7 +39,6 @@
       var prevalence = [];
 
       for (var i = 0; i < data.length; i++) {
-        console.log(data[i].meta);
         prevalence.push([htmlDecode(data[i].meta.year_range), parseInt(data[i].meta.affected_people)]);
       }
 
