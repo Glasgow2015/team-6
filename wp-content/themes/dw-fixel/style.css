@@ -17,3 +17,9 @@
 .sticky {}
 .gallery-caption {}
 .bypostauthor {}
+
+.topbtn { display: none !important; }
+
+.ls-promotional-link { display: none !important; }
+
+.ls-theme-ae-text{text-align:justify;}
