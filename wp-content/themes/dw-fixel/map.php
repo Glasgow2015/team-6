@@ -28,11 +28,11 @@
     var network = [];
     
     for (var i = 0; i < patients.length; i++) {
-      network.push({patient: patients[i].code, support: []});
+      network.push({patient: patients[i], support: []});
         
       for (var j = 0; j < supps.length; j++) {
         if (patients[i].name == supps[j].pat) {
-          network[i].support.push(supps[j].code);
+          network[i].support.push(supps[j]);
         }
       }
     }
@@ -44,7 +44,7 @@
     });
 
     for (var i = 0; i < network.length; i++) {
-      var source = network[i].patient;
+      var source = network[i].patient.code;
     
       var marker = new google.maps.Marker({
         position: source,
@@ -56,13 +56,13 @@
       var supporters = network[i].support;
       for (var j = 0; j < supporters.length; j++) {
         var marker = new google.maps.Marker({
-          position: supporters[j],
+          position: supporters[j].code,
           map: map,
           mapTypeId: google.maps.MapTypeId.TERRAIN,
           icon: imageSup
         });
 
-        var paths = [supporters[j], source];
+        var paths = [supporters[j].code, source];
         var flightPath = new google.maps.Polyline({
           path: paths,
           geodesic: true,
@@ -79,9 +79,17 @@
   function onCooRecieved(){
     var m = supps.length;
     for (var i = 0; i < supps.length; i++) {
-      supps[i] = {name: supps[i].title, code: supps[i].meta.post_code, pat: supps[i].meta.member.post_title};
+      var supp = supps[i];
+      supps[i] = {
+        name: supp.title,
+        code: supp.meta.post_code,
+        pat: supp.meta.member.post_title,
+        interests: supp.meta.interests,
+        picture: supp.meta.picture,
+        email: supp.meta.email
+      };
       var apiUrl = "http://maps.googleapis.com/maps/api/geocode/json?address=" + supps[i].code + "&sensor=false";
-      jQuery.getJSON( apiUrl, function( i, data ) {
+      jQuery.getJSON( apiUrl, function(i, data) {
         m--;
         supps[i].code = data.results[0].geometry.location;
         if (m == 0) onCooRecieved2();
@@ -93,7 +101,14 @@
   function onDataRecieved() {
     var l = patients.length;
     for (var i = 0; i < patients.length; i++) {
-      patients[i] = {name: patients[i].title, code: patients[i].meta.post_code};
+      var patient = patients[i];
+      patients[i] = {
+        name: patient.title,
+        code: patient.meta.post_code,
+        interests: patient.meta.interests,
+        picture: patient.meta.picture,
+        email: patient.meta.email
+      };
       var apiUrl = "http://maps.googleapis.com/maps/api/geocode/json?address=" + patients[i].code + "&sensor=false";
       jQuery.getJSON( apiUrl, function( i, data ) {
         l--;
