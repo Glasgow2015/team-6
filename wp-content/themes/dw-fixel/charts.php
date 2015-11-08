@@ -17,6 +17,7 @@
 <?php get_footer() ?>
 
 <script src="//www.google.com/jsapi"></script>
+<script src="<?= get_template_directory_uri() ?>/js/graph3d.js"></script>
 <script>
   function htmlDecode(input){
     var e = document.createElement('div');
