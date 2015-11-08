@@ -76,6 +76,7 @@
         showGrid: true,
         showShadow: false,
         keepAspectRatio: true,
+        backgroundColor: 'transparent',
         verticalRatio: 0.5
       };
 

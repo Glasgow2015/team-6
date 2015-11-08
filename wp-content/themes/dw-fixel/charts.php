@@ -56,7 +56,8 @@
       var options = {
         title: 'Time survived since diagnosis',
         width: '100%',
-        height: 400
+        height: 400,
+        backgroundColor: 'transparent'
       };
 
       // Instantiate and draw our chart, passing in some options.

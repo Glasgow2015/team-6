@@ -54,6 +54,7 @@
       var data = google.visualization.arrayToDataTable(parsedData);
       var options = {
         hAxis: {title: 'Age'},
+        backgroundColor: 'transparent',
         vAxis: {title: 'Number of patients'},
         bubble: {textStyle: {fontSize: 11}}
       };
@@ -67,6 +68,7 @@
       var options = {
         title: 'Number of patients by age group',
         curveType: 'function',
+        backgroundColor: 'transparent',
         legend: { position: 'bottom' }
       };
 
