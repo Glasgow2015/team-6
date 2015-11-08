@@ -1,4 +1,4 @@
-<?php /* Template Name: Charts */ ?>
+<?php /* Template Name: Frequency */ ?>
 <?php get_header() ?>
 <div class="headline">
   <div class="headline-wrap">
@@ -10,7 +10,8 @@
 <div id="main" role="main">
   <div class="single-page row-fluid">
     <div class="main-content span12">
-      <div id="chart1" style="margin: 0 auto; width: 100%; max-width: 600px"></div>
+      <div id="chart2"></div><br><br>
+      <div id="chart3"></div>
     </div>
   </div>
 </div>
@@ -39,31 +40,6 @@
   // instantiates the pie chart, passes in the data and
   // draws it.
   function drawChart() {
-    jQuery.getJSON('//5c1223b5.ngrok.com/cancer/team-6/wp-json/posts?type=prevalence', function(data) {
-      var prevalence = [];
-
-      for (var i = 0; i < data.length; i++) {
-        prevalence.push([htmlDecode(data[i].meta.year_range), parseInt(data[i].meta.affected_people)]);
-      }
-
-      // Create the data table.
-      var data = new google.visualization.DataTable();
-      data.addColumn('string', 'Topping');
-      data.addColumn('number', 'Slices');
-      data.addRows(prevalence);
-
-      // Set chart options
-      var options = {
-        title: 'Time survived since diagnosis',
-        width: '100%',
-        height: 400
-      };
-
-      // Instantiate and draw our chart, passing in some options.
-      var chart = new google.visualization.PieChart(document.getElementById('chart1'));
-      chart.draw(data, options);
-    });
-
     jQuery.getJSON('//5c1223b5.ngrok.com/cancer/team-6/wp-json/posts?type=incidents', function (data) {
       var parsedData = [];
       parsedData.push(['Year of Dioagnosis', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013']);
