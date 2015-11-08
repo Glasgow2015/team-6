@@ -662,4 +662,3 @@ function create_member_type() {
 
     register_post_type( 'prevalence', $args );
 }
-}
