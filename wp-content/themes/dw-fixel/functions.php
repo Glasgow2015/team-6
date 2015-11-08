@@ -661,4 +661,35 @@ function create_member_type() {
     ];
 
     register_post_type( 'prevalence', $args );
+
+    // Annual Incidents
+    $labels = [
+        'name'               => _x( 'Annual Incidents', 'post type general name', 'your-plugin-textdomain' ),
+        'singular_name'      => _x( 'Incident', 'post type singular name', 'your-plugin-textdomain' ),
+        'menu_name'          => _x( 'Annual Incidents', 'admin menu', 'your-plugin-textdomain' ),
+        'name_admin_bar'     => _x( 'Annual Incident', 'add new on admin bar', 'your-plugin-textdomain' ),
+        'add_new'            => _x( 'Add New', 'book', 'your-plugin-textdomain' ),
+        'add_new_item'       => __( 'Add New Incident', 'your-plugin-textdomain' ),
+        'new_item'           => __( 'New Incident', 'your-plugin-textdomain' ),
+        'edit_item'          => __( 'Edit Incident', 'your-plugin-textdomain' ),
+        'view_item'          => __( 'View Incident', 'your-plugin-textdomain' ),
+        'all_items'          => __( 'All Incident', 'your-plugin-textdomain' ),
+        'search_items'       => __( 'Search Incident', 'your-plugin-textdomain' ),
+        'parent_item_colon'  => __( 'Parent Incident:', 'your-plugin-textdomain' ),
+        'not_found'          => __( 'No incidents found.', 'your-plugin-textdomain' ),
+        'not_found_in_trash' => __( 'No incidents found in Trash.', 'your-plugin-textdomain' )
+    ];
+
+    $args = [
+        'public' => true,
+        'exclude_from_search' => true,
+        'publicly_queryable' => true,
+        'show_in_nav_menus' => false,
+        'menu_icon' => 'dashicons-chart-line',
+        'menu_position' => 32,
+        'labels' => $labels,
+        'supports' => ['title']
+    ];
+
+    register_post_type( 'incidents', $args );
 }
