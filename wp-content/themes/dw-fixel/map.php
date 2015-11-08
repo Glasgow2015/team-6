@@ -47,7 +47,7 @@
       var p = network[i].patient;
       var source = p.code;
 
-      var contentString = '<img src='
+      var contentString = '<img width=32 src='
         + (p.picture || '//1.gravatar.com/avatar/a77e89a55fbb1d4852877c833c158edd?s=32&d=mm&r=g')
         + '> '
         + (p.name || '')
@@ -69,7 +69,7 @@
       var supporters = network[i].support;
       for (var j = 0; j < supporters.length; j++) {
         var s = supporters[j];
-        contentString = '<img src='
+        contentString = '<img width=32 src='
           + (s.picture || '//1.gravatar.com/avatar/a77e89a55fbb1d4852877c833c158edd?s=32&d=mm&r=g')
           + '> '
           + (s.name || '')
