@@ -5,7 +5,7 @@ if( ! function_exists('dw_homepage_layout_define') ) {
         global $dw_homepage_layout;
 
         $dw_homepage_layout = array(
-            'number'    => 23 ,
+            'number'    => 15 ,
             'items'     => array(
                 1           => array(
                     'format'    => 'welcome-box',
@@ -24,7 +24,7 @@ if( ! function_exists('dw_homepage_layout_define') ) {
                 )
             )
         );
-        $dw_homepage_layout['number'] = dw_get_theme_option('block_number',23);
+        $dw_homepage_layout['number'] = dw_get_theme_option('block_number',15);
     }
     add_action( 'init', 'dw_homepage_layout_define' );
 }
