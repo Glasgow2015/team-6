@@ -47,7 +47,12 @@
       var p = network[i].patient;
       var source = p.code;
 
-      var contentString = '<div>' + p.name || '' + '<img src="' + p.picture || '' + '">' + p.email || '' + '</div>';
+      var contentString = '<img src='
+        + (p.picture || '//1.gravatar.com/avatar/a77e89a55fbb1d4852877c833c158edd?s=32&d=mm&r=g')
+        + '> '
+        + (p.name || '')
+        + '<br>'
+        + (p.email || '');
       var infoWindow = new google.maps.InfoWindow({content: contentString});
     
       var marker = new google.maps.Marker({
@@ -64,7 +69,12 @@
       var supporters = network[i].support;
       for (var j = 0; j < supporters.length; j++) {
         var s = supporters[j];
-        contentString = '<div>' + s.name || '' + '<img src="' + s.picture || '' + '">' + s.email || '' + '</div>';
+        contentString = '<img src='
+          + (s.picture || '//1.gravatar.com/avatar/a77e89a55fbb1d4852877c833c158edd?s=32&d=mm&r=g')
+          + '> '
+          + (s.name || '')
+          + '<br>'
+          + (s.email || '');
         infoWindow = new google.maps.InfoWindow({content: contentString});
 
         var marker = new google.maps.Marker({
