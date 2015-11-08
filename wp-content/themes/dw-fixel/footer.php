@@ -2,11 +2,7 @@
 ?>
 			<footer class="site-footer" role="contentinfo">
 				<small>
-				<?php _e('Copyight &copy; 2013 by','dw') ?> <a href="#">DW Fixel.</a> 
-				<?php _e('Proudly powered by ','dw') ?>
-				<a href="http://wordpress.org/" target="_blank" title="Semantic Personal Publishing Platform">WordPress</a>.
-				<br/> <?php _e('Theme DW Fixel by','dw') ?> 
-				<a href="http://www.designwall.com/" rel="nofollow" target="_blank">DesignWall</a>.
+				<?php _e('Copyight &copy; 2015 by','dw') ?> <a href="#">Pancreatic Cancer Scotland, a Registered Scottish Charity - number SC041740.</a> 
 				</small>
 			</footer>
 			<?php get_sidebar('top'); ?>
