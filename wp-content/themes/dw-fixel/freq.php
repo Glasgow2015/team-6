@@ -41,6 +41,8 @@
   // draws it.
   function drawChart() {
     jQuery.getJSON('//5c1223b5.ngrok.com/cancer/team-6/wp-json/posts?type=incidents', function (data) {
+      data.reverse();
+
       var parsedData = [];
       parsedData.push(['Year of Dioagnosis', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '1999', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013']);
     
@@ -49,6 +51,11 @@
         meta = data[i].meta;
         parsedData.push([meta.age_groups]);
         for (var j = 0; j < 25; j++) parsedData[i].push(parseInt(meta[j.toString()]));
+      }
+
+      for (var i = 1; i < parsedData.length; i++) {
+        var piece = parsedData[i];
+        piece[1] = parseInt(piece[0].substring(0, 2));
       }
     
       var data = google.visualization.arrayToDataTable(parsedData);
