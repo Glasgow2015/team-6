@@ -1,3 +1,4 @@
+<?php header("Access-Control-Allow-Origin: *"); ?>
 <!DOCTYPE html>
 <!--[if (IE 8)&!(IEMobile)]>
 <html class="no-js lt-ie9" <?php language_attributes(); ?>>
