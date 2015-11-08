@@ -569,6 +569,7 @@ if( ! function_exists('dw_fixel_fb_meta') ) {
 
 add_action( 'init', 'create_member_type' );
 function create_member_type() {
+    // Members
     $labels = [
         'name'               => _x( 'Members', 'post type general name', 'your-plugin-textdomain' ),
         'singular_name'      => _x( 'Member', 'post type singular name', 'your-plugin-textdomain' ),
@@ -599,6 +600,7 @@ function create_member_type() {
 
     register_post_type( 'member', $args );
 
+    // Supporters
     $labels = [
         'name'               => _x( 'Supporters', 'post type general name', 'your-plugin-textdomain' ),
         'singular_name'      => _x( 'Supporter', 'post type singular name', 'your-plugin-textdomain' ),
